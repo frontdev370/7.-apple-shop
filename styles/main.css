@@ -11,7 +11,7 @@ header{
     background-color: aquamarine;
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -48,9 +48,33 @@ figcaption > a{
     cursor: pointer;
 }
 
+header > input{
+    outline: none;
+    border: none;
+    width: 30vw;
+    height: 50%;
+    margin-left: 20vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 @media (min-width:850px){
     main{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+    header{
+        width: 100vw;
+    }
+    header > input{
+        width: 20vw;
+        align-items: flex-end;
+    }
 }
+
+header > img{
+    margin-left: 18vw;
+}
+
+
+
