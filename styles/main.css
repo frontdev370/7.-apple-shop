@@ -67,6 +67,7 @@ header > input{
         width: 100vw;
     }
     header > input{
+        margin-right: 10px;
         width: 20vw;
         align-items: flex-end;
     }
@@ -77,4 +78,15 @@ header > img{
 }
 
 
-
+@media (max-width: 450px){
+    header{
+        width: 100vw;
+    }
+    header > input{
+        width: 200px;
+        margin-left: 5px;
+    }
+    header > img{
+        margin-left: 10px;
+    }
+}
